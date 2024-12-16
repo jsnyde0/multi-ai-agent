@@ -1,2 +1,2 @@
-# yolo_api
-Testing deployment of YOLO object dectection with FastAPI
+# multi-ai-agent
+Experimenting and learning about multi ai agent apps.
