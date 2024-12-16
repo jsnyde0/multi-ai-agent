@@ -130,6 +130,21 @@ wheels = [
 ]
 
 [[package]]
+name = "asana"
+version = "5.0.10"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "certifi" },
+    { name = "python-dateutil" },
+    { name = "six" },
+    { name = "urllib3" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8d/4e/22d9b746571afc677280f922fa86ae003fe481ad67a6c762e02f407a27f4/asana-5.0.10.tar.gz", hash = "sha256:4655d43fe78d3fee6701443cb1a2b92560b64e626e893b553f5366c68fb127c9", size = 112941 }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/ba/00/570d25140d9bc5315ccb4b20cdf5931d567da44d7902bfd241cd0b2fe447/asana-5.0.10-py3-none-any.whl", hash = "sha256:a21618ffdba0b13cac9f92c93aa17553283c6442375f1038a115545747a3ca93", size = 185508 },
+]
+
+[[package]]
 name = "asgiref"
 version = "3.8.1"
 source = { registry = "https://pypi.org/simple" }
@@ -3900,12 +3915,14 @@ name = "yolo-api"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "asana" },
     { name = "crewai" },
     { name = "mypy" },
     { name = "openai" },
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
+    { name = "python-dotenv" },
     { name = "ruff" },
 ]
 
@@ -3916,12 +3933,14 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "asana", specifier = ">=5.0.10" },
     { name = "crewai", specifier = ">=0.86.0" },
     { name = "mypy", specifier = ">=1.13.0" },
     { name = "openai", specifier = ">=1.57.4" },
     { name = "pre-commit", specifier = ">=4.0.1" },
     { name = "pytest", specifier = ">=8.3.4" },
     { name = "pytest-asyncio", specifier = ">=0.24.0" },
+    { name = "python-dotenv", specifier = ">=1.0.1" },
     { name = "ruff", specifier = ">=0.8.2" },
 ]
 

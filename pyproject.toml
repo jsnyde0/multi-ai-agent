@@ -5,12 +5,14 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "asana>=5.0.10",
     "crewai>=0.86.0",
     "mypy>=1.13.0",
     "openai>=1.57.4",
     "pre-commit>=4.0.1",
     "pytest-asyncio>=0.24.0",
     "pytest>=8.3.4",
+    "python-dotenv>=1.0.1",
     "ruff>=0.8.2",
 ]
 
