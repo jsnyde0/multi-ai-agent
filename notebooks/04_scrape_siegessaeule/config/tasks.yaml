@@ -1,0 +1,40 @@
+crawl_event_list_page:
+  description: >
+    Use the SpiderTool to crawl the url to collect basic information on events with their event detail page urls.
+  expected_output: >
+    A JSON object with an array of events. Each event must include the title, date, and description and detail url.
+
+data_collection:
+  description: >
+    Create an initial overview of all available data for each event.
+    Use the ScrapeWebsiteTool tool to gather basis event data for each event.
+  expected_output: >
+    A list of each event and all its data, including the event name, date, location, detail url and any other relevant information.
+
+data_analysis:
+  description: >
+    Analyze the Trello data to identify blockers, delays, and
+    overall progress.
+  expected_output: >
+    A summary of the analysis highlighting key issues, blockers,
+    delays, and progress.
+
+report_generation:
+  description: >
+    Compile a comprehensive sprint report based on the analysis
+    of the project data.
+
+
+    The report should include:
+    - Sprint Overview
+    - Task Summary
+    - Identified Issues and Blockers
+    - Progress and Delays
+    - Team Performance Overview
+    - Action Items and Recommendations
+    - Anything else that is relevant to the project.
+    The report must be formatted in markdown.
+  expected_output: >
+    A detailed sprint report in markdown format that can be presented
+    to the executive team, don't enclose the markdown in any block
+    '```' or '```markdown' or any other code block.
